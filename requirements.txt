@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+gunicorn
+python-dotenv
+pymilvus
+sentence-transformers
+google-generativeai
+beautifulsoup4
+playwright
