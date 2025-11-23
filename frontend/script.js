@@ -13,11 +13,13 @@ submitBtn.onclick = async () => {
     loader.classList.remove("hidden");
     output.innerHTML = "";
 
-    const res = await fetch("https://35-223-25-198.nip.io:8000/recommend", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({ query })
-    });
+    const res = await fetch("https://cors-anywhere.herokuapp.com/http://35.223.25.198:8000/recommend", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ query })
+});
     
     const data = await res.json();
     loader.classList.add("hidden");
