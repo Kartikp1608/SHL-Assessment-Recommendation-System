@@ -13,7 +13,7 @@ submitBtn.onclick = async () => {
     loader.classList.remove("hidden");
     output.innerHTML = "";
 
-    const res = await fetch("https://proxy-seven-taupe.vercel.app/recommend", {
+    const res = await fetch("https://proxy-zeta-fawn-32.vercel.app/api/recommend", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
