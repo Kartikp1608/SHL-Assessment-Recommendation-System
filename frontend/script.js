@@ -13,7 +13,7 @@ submitBtn.onclick = async () => {
     loader.classList.remove("hidden");
     output.innerHTML = "";
 
-    const res = await fetch("https://cors-anywhere.herokuapp.com/http://35.223.25.198:8000/recommend", {
+    const res = await fetch("https://proxy-seven-taupe.vercel.app/recommend", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
